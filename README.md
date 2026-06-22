@@ -1,4 +1,6 @@
-## Hi there 👋
+## Amin's account
+was enjoying his gap year 2025-2026
+🚧 cool stuff in the making 🚧
 
 <!--
 **SiERRA74/Sierra74** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
