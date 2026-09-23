@@ -1,0 +1,7 @@
+
+body {
+  background-image: url("src/vholume_bg.gif");
+  object-fit: cover;
+  color: black;
+  font-family: Verdana;
+}
