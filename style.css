@@ -1,7 +1,47 @@
-
 body {
   background-image: url("src/vholume_bg.gif");
-  object-fit: cover;
-  color: black;
-  font-family: Verdana;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  font-family: Verdana, sans-serif;
+  margin: 0;
+  cursor: crosshair;
+}
+
+
+.main {
+  display: flex;
+  flex-direction: column;
+  padding: 200px;
+}
+
+#profile{
+  background-color: gray;
+  width: 300px;
+  height: 300px;
+  border-radius: 2%;
+  border: solid;
+  border-color: azure;
+}
+
+#pfp{
+  width: 150px;
+  border-radius: 50%;
+}
+.socials {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  align-items: center;
+}
+
+.logo {
+  display: inline-flex;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
 }
