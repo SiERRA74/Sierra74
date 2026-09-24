@@ -11,10 +11,6 @@ body {
 
 @import url('https://fonts.cdnfonts.com/css/sf-digital-readout');
 
-h1{
-  font-family: 'SF Digital Readout', sans-serif;
-  font-style: bold;
-}
 
 .main {
   display: flex;
@@ -88,6 +84,9 @@ border-color: rgb(46, 248, 188);
   border-color: rgba(70, 255, 162, 0.719);
 }
 
+.p_navi{
+  padding: 10px;
+}
 .arrow {
   font-size:xx-large ;
   color: rgb(55, 241, 55);
@@ -95,25 +94,30 @@ border-color: rgb(46, 248, 188);
 
 /*############## MUSIC PLAYER ####################*/
 
+.playy, .pausee {
+  font-size: x-large;
+} /* color of play & pause buttons */
+
+
 .pausee {              /* pause is hidden until you click play */
   display: none;
 }         
 
-#music_player {
-position:fixed;
-top:2em;
-margin-bottom:20px;
-left:0;
-margin-left:20px;
-display:flex;
-z-index:99;
-text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000, 0 0;
+#music-player {
+  margin-bottom:20px;
+  left:0;
+  margin-left:20px;
+  display:flex;
+  z-index:200;
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000, 0 0;
+  padding: 20px 0px 20px 0px;
 }
-#music_player a {text-decoration:none;}
+
+#music-player a {text-decoration:none;}
  
-#music_player > div {
-align-self:center;
--webkit-align-self:center;
+#music-player > div {
+  align-self:center;
+  -webkit-align-self:center;
 }
  
 .music-controls {
@@ -129,15 +133,37 @@ cursor:pointer;
 .pausee {display:none;}
  
 .sonata {
-margin-left:10px;
-color:#000; /* color of music note symbol */
+  margin-left:10px;
+  color:#000; /* color of music note symbol */
 }
  
-.labeltext {
-margin-left:1px;
-font-family:courier new;
-font-size:9px;
-color:#fff; /* color of song title */
+.stereo {
+  margin-left:2px;
+  font-family:courier new;
+  font-size:9px;
+  color:#fff; /* color of song title */
+}
+
+.stereo img {
+  padding: 5px 2px 5px 2px;
+  width: 25px;
+  background-color: rgba(25, 255, 224, 0.2);
+}
+
+marquee{
+  color: #0defd9;
+  font-size: x-large;
+  margin-left: 3px;
+  max-width: 200px;
+  font-family: 'SF Digital Readout', sans-serif;
+  font-style: bold;
+    text-shadow:
+    0 0 6px rgba(202,228,225,0.92),
+    0 0 30px rgba(202,228,225,0.34),
+    0 0 12px rgba(30,132,242,0.52),
+    0 0 21px rgba(30,132,242,0.92),
+    0 0 34px rgba(30,132,242,0.78),
+    0 0 54px rgba(30,132,242,0.92);
 }
 
 
