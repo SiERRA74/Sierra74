@@ -6,6 +6,8 @@
     <title>SiERRA74</title>
     <link rel="stylesheet" href="style.css">
     <!-- https://sierra74.neocities.org/ -->
+    <link href="https://fonts.cdnfonts.com/css/sf-digital-readout" rel="stylesheet">
+    <script src="music.js"></script>
   </head>
   <body>
     <div class="main">
@@ -21,9 +23,18 @@
             </div>
         </div>
         <div id="navi">
-          <p class="p_navi"><span style="font-size:xx-large ;color: rgb(55, 241, 55);">></span>LOREM IPSUMLOREM IPSUM</p>
-          <p class="p_navi"><span style="font-size:xx-large ;color: rgb(55, 241, 55);">></span>LOREM IPSUMLOREM IPSUM</p>
-          <p class="p_navi"><span style="font-size:xx-large ;color: rgb(55, 241, 55);">></span>LOREM IPSUMLOREM IPSUM</p>
+          <p class="p_navi"><span class="arrow">></span>LOREM IPSUMLOREM IPSUM</p>
+          <p class="p_navi"><span class="arrow">></span>LOREM IPSUMLOREM IPSUM</p>
+          <p class="p_navi"><span class="arrow">></span>LOREM IPSUMLOREM IPSUM</p>
+          <div id="music_player">
+            <div class="music-controls" onclick="songstart();">
+            <div class="playy">▶︎</div>
+            <div class="pausee">❚❚</div>
+            </div>
+            <div class="sonata"> </div>
+            <div class="labeltext"><img src="https://64.media.tumblr.com/tumblr_lu2dd4ocjj1qfoi4t.gif"><img src="https://64.media.tumblr.com/tumblr_lu2dd4ocjj1qfoi4t.gif"><img src="https://64.media.tumblr.com/tumblr_lu2dd4ocjj1qfoi4t.gif"><img src="https://64.media.tumblr.com/tumblr_lu2dd4ocjj1qfoi4t.gif"> </div>
+            </div><!--end music player-->
+          <audio id="tune" src="src/leeching_dazegxd.mp3"></audio>
         </div>
       </div>
         <div class="mid">

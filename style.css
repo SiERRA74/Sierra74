@@ -9,11 +9,17 @@ body {
   cursor: crosshair;
 }
 
+@import url('https://fonts.cdnfonts.com/css/sf-digital-readout');
+
+h1{
+  font-family: 'SF Digital Readout', sans-serif;
+  font-style: bold;
+}
 
 .main {
   display: flex;
   flex-direction: column;
-  padding: 200px;
+  padding: 110px;
 }
 
 .top{
@@ -21,6 +27,7 @@ body {
   justify-content: space-around;
 }
 
+/*############### PROFILE BOX ###################*/
 #profile{
   display: flex;
   background-color: rgba(128, 128, 128, 0.125);
@@ -34,21 +41,13 @@ body {
   justify-content:space-around;
 }
 
-#navi{
-  background-color: rgba(128, 128, 128, 0.125);
-  width: 600px;
-  height: 320px;
-  border-radius: 2%;
-  border: solid;
-  border-color: rgba(70, 255, 162, 0.719);
-}
-
 #pfp{
   display: flex;
   width: 150px;
   border-radius: 50%;
 }
 
+/*################# SOCIALS #####################*/  
 .socials {
   display: flex;
   flex-direction: row;
@@ -75,5 +74,71 @@ transform: scale(1.2) rotate(0deg);
 transform-origin: 50% 50%;
 border: solid;
 border-color: rgb(46, 248, 188);
-}     
-   
+}
+/*#################################################*/   
+
+#navi{
+  background-color: rgba(128, 128, 128, 0.125);
+  min-width: 70%;
+  height: 320px;
+  margin-left: 50px;
+  margin-right: 100px;
+  border-radius: 2%;
+  border: solid;
+  border-color: rgba(70, 255, 162, 0.719);
+}
+
+.arrow {
+  font-size:xx-large ;
+  color: rgb(55, 241, 55);
+}
+
+/*############## MUSIC PLAYER ####################*/
+
+.pausee {              /* pause is hidden until you click play */
+  display: none;
+}         
+
+#music_player {
+position:fixed;
+top:2em;
+margin-bottom:20px;
+left:0;
+margin-left:20px;
+display:flex;
+z-index:99;
+text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000, 0 0;
+}
+#music_player a {text-decoration:none;}
+ 
+#music_player > div {
+align-self:center;
+-webkit-align-self:center;
+}
+ 
+.music-controls {
+user-select:none;
+-webkit-user-select:none;
+width:13px;
+font-size:13px;
+cursor:pointer;
+}
+ 
+.playy, .pausee {color:#fff;} /* color of play & pause buttons */
+ 
+.pausee {display:none;}
+ 
+.sonata {
+margin-left:10px;
+color:#000; /* color of music note symbol */
+}
+ 
+.labeltext {
+margin-left:1px;
+font-family:courier new;
+font-size:9px;
+color:#fff; /* color of song title */
+}
+
+
+
