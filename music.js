@@ -1,28 +1,33 @@
-$(document).ready(function(){
-    $(".playy").click(function() {
-        $(".pausee").show();
-        $(".playy").hide();
-    });
+// Grab elements
+const audio   = document.getElementById('tune');
+const play    = document.querySelector('.playy');
+const pause   = document.querySelector('.pausee');
+const marquee1 = document.getElementById('marquee1');
 
-    $(".pausee").click(function() {
-        $(".playy").show();
-        $(".pausee").hide();
-    });
-});
-
+// Called by onclick="songstart();" in the HTML
 function songstart() {
-var harmonia = document.getElementById("tune");
-    if (harmonia.paused) {
-        harmonia.play();
-    } else { 
-        harmonia.pause();
-    }
+  if (audio.paused) {
+    audio.play();
+  } else {
+    audio.pause();
+  }
 }
 
-$(document).ready(function(){
-    var owari = document.getElementById("tune");
-    owari.onended = function() {
-        $(".playy").show();
-        $(".pausee").hide();
-    };
+// UI mirrors the audio's real state — no desync possible
+audio.addEventListener('play', () => {
+  play.style.display  = 'none';
+  pause.style.display = 'inline';
+  if (marquee1) marquee1.start();
+});
+
+audio.addEventListener('pause', () => {
+  play.style.display  = 'inline';
+  pause.style.display = 'none';
+  if (marquee1) marquee1.stop();
+});
+
+audio.addEventListener('ended', () => {
+  play.style.display  = 'inline';
+  pause.style.display = 'none';
+  if (marquee1) marquee1.stop();
 });
